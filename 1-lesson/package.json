@@ -1,0 +1,10 @@
+{
+  "title": "First node check",
+  "version": "1.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "casual": "^1.6.2"
+  }
+}
