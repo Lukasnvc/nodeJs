@@ -1,5 +1,5 @@
 {
-  "name": "3-lesson",
+  "name": "4-lesson",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -22,3 +22,4 @@
     "nodemon": "^2.0.20"
   }
 }
+
