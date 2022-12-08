@@ -67,6 +67,15 @@ app.put("/cars/:id", (req, res) => {
   })
 })
 
+app.delete("/cars/:id", (req, res) => {
+  const id = +req.params.id;
+  const car = cars.find((car) => car.id === id);
+  const index = cars.indexOf(car);
+  cars.splice(index, 1);
+
+  res.send(cars);
+})
+
 
 
 app.listen(port, () => {
