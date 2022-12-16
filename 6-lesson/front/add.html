@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pets</title>
+  <script defer src="add.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+  <button id="btnPets">View Pets</button>
+  <h1>Add pet</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required>
+    <label for="type">Type:</label>
+    <select name="type" id="type">
+      <option value="dog">dog</option>
+      <option value="cat">cat</option>
+      <option value="bunny">bunny</option>
+    </select>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" required>
+    <button type="submit" id="submit">Add</button>
+  </form>
+</body>
+</html>
