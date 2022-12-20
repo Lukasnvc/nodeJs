@@ -65,7 +65,8 @@ app.get("/byoldest", async (req, res) => {
     const data = await con
       .db("first")
       .collection("pets")
-      .find(type ? { type } : {})
+      // .find(type ? { $or: [{ type: { $in: type.split(',') } }] } : {})
+      .find({ $or: [{ type: type }] })
       .sort({ age: sort === "asc" ? 1 : -1 })
       .toArray();
     res.send(data);
