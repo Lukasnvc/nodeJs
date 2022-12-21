@@ -1,0 +1,127 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+
+  header {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+    button {
+      margin: 10px;
+      border: none;
+      background-color: white;
+      color: grey;
+      font-size: 1.1rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    #btnMemberships {
+      color: rgb(135, 109, 237);
+    }
+  }
+  .color {
+    background-color: rgb(241, 241, 253);
+    height: 95vh;
+    width: 100vw;
+    margin: 0 auto;
+
+    main {
+      position: relative;
+      padding: 20px;
+      
+
+      .top {
+        h2, p {
+          font-weight: 400;
+          margin: 10px;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
+
+        #addBtn {
+          position: absolute;
+          top: 50px;
+          right: 50px;
+          background-color: rgb(135, 109, 237);
+          color: white;
+          padding: 7px 15px;
+          border: none;
+          border-radius: 5px;
+          font-size: 0.8rem;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      #container {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+
+        .card {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 30px;
+          background-color: white;
+
+          .cardTop {
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            margin: 20px auto;
+          }
+
+          span {
+            font-weight: 500;
+          }
+          
+          p {
+            margin: 20px auto;
+            font-size: 0.6rem;
+            border-bottom: 1px solid rgb(241, 241, 253);
+          }
+
+          i {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            font-size: 0.7rem;
+            padding: 7px;
+            background-color: rgb(245, 214, 214);
+            color: rgb(248, 124, 124);
+            border-radius: 5px;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    
+      
+    }
+
+    footer {
+      position: fixed;
+      bottom: 10px;
+      background-color: rgb(241, 241, 253);
+
+      p {
+        width: 100vw;
+        text-align: center;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}

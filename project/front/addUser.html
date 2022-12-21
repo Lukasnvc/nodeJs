@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="addUser.js"></script>
+  <link rel="stylesheet" href="addUser.css">
+  <script src="https://kit.fontawesome.com/b423b1131d.js" crossorigin="anonymous"></script>
+  <title>Add Memberships</title>
+</head>
+<body>
+  <header>  
+    <button id="btnMemberships">Memberships</button>
+    <button id="btnUsers">Users</button>
+  </header>
+  <div class="color">
+  <main>
+    <div class="top">
+      <h2>Create User</h2>
+    </div>
+  
+      <div class="container">
+        <form>
+          <div>
+            <label for="fname">First Name <span class="star">*</span></label>
+            <input type="text" name="fname" id="fname" required placeholder="First Name">
+          </div>
+          <div>
+            <label for="lname">Last Name <span class="star">*</span></label>
+            <input type="text" name="lname" id="lname" required placeholder="Last Name">
+          </div>
+          <div>
+            <label for="email">Email addresss <span class="star">*</span></label>
+            <input type="email" name="email" id="email" required placeholder="Email Address">
+          </div>
+          <div>
+            <label for="plan">Change Membership</label>
+            <select name="plan" id="plan">
+            </select>
+          </div>
+          <div class="btns">
+            <button id="cancel">Cancel</button>
+            <button id="addBtn">New Membership</button>
+          </div>
+        </form>
+      
+      </div>
+    
+  </main>
+  <footer>
+    <p>Copyright 2022 Membership management</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="addMemberships.js"></script>
+  <link rel="stylesheet" href="addMembership.css">
+  <script src="https://kit.fontawesome.com/b423b1131d.js" crossorigin="anonymous"></script>
+  <title>Add Memberships</title>
+</head>
+<body>
+  <header>  
+    <button id="btnMemberships">Memberships</button>
+    <button id="btnUsers">Users</button>
+  </header>
+  <div class="color">
+  <main>
+    <div class="top">
+      <h2>Create Membership</h2>
+    </div>
+  
+      <div class="container">
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required placeholder="Name">
+          </div>
+          <div>
+            <label for="price">Membership Price</label>
+            <input type="number" name="price" id="price" required placeholder="Membership Price">
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea name="description" id="description" rows="10" placeholder="Write a description"></textarea>
+          </div>
+          <div class="btns">
+            <button id="cancel">Cancel</button>
+            <button id="addBtn">New Membership</button>
+          </div>
+        </form>
+      
+      </div>
+    
+  </main>
+  <footer>
+    <p>Copyright 2022 Membership management</p>
+  </footer>
+</body>
+</html>
