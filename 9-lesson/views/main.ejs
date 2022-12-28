@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News</title>
+</head>
+<body>
+  <h1>News</h1>
+  <ul>
+    <% data.forEach(item => { %>
+      <li> 
+        <img src=<%= item.imageUrl %>>
+        <div>
+          <span><%= item.timestamp %></span>
+          <h3><%= item.title %></h3>
+          <p><%= item.description %></p>
+        </div>
+        </li>
+    <%})%>
+  </ul>
+</body>
+</html>
+
+<style>
+  * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  background-color: rgb(59, 59, 59);
+  color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+ul {
+  padding: 10px;
+}
+
+li {
+  display: flex;
+  margin: 20px auto;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+span {
+  color: rgb(146, 145, 145);
+  font-size: 0.7rem;
+}
+</style>
+

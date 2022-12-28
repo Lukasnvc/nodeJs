@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bars</title>
+  <script src="https://kit.fontawesome.com/b423b1131d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Most popular Bars</h1>
+<div class="container">
+    <% data.forEach(element => { %>
+      <div class="card">
+        <img src=<%= element.pic %> alt=""> 
+        <h3><%= element.name %></h3>
+        <p><%= element.address %></p>
+        
+      </div>
+    <%})%>
+  </div>
+</body>
+</html>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .card {
+    
+    background-color: rgb(249, 238, 224);
+    border-radius: 10px;
+    width: fit-content;
+  }
+  img {
+    margin: 0 auto;
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+  }
+</style>
